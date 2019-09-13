@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ATTENDANCE</title>
+</head>
+<style>
+    .center  {
+  margin: auto ;
+  width: 160px;
+  border: 4px solid #F4DD13;
+  padding: 1px;
+</style>
+<body>
+    <div class="center">
+
+
+    <form>
+        
+  <input type="text" name="UserName" placeholder="UserName" width="1000" height="1000"><br>
+  
+  <input type="password" name="Password" placeholder="Password">
+  <div style="text-align:center;">
+      <input type="submit" placeholder="submit" onClick="Submit">
+      </div>
+    
+
+  
+  
+        
+        
+    </form>
+    
+    </div>
+   
+
+
+</body>
+</html>
