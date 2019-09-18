@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+<title>ATTENDANCE</title>
+</head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+body {
+    background-image: url("http://alumni.as.virginia.edu/sites/alumni.as.virginia.edu/files/styles/hero/public/a%26s_website_hero_democracyupdate2_1.png?itok=jDSvWxKp");
+    background-repeat: no-repeat;
+     height: 100%;
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li.one {
+  border-style: solid;
+  border-color: green;
+}
+
+   .center  {
+      width: 200px;
+      height: 220px;
+      margin: auto ;
+      width: 160px;
+      border: 4px solid #F4DD13;
+      padding-bottom: 1px;
+      padding-top:15px;
+      padding-left:30px;
+      padding-right:30px;
+   }
+
+ input[type=text] {
+  width: 100%;
+  padding: 5px 2px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+input[type=password] {
+  width: 100%;
+  padding:5px 2px;
+  
+  
+  box-sizing: border-box;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 8px;
+    }
+
+.button 
+{
+    cursor: pointer;
+    display: block;
+    color:black ;
+    text-align: center;
+    background-color:white;
+    padding: 10px 10px;
+    border-style:inset;
+    border-width:4px 4px;
+    border-color:red;
+    border-radius:20px;
+    margin:15px 60px;
+    text-decoration: none;
+}
+.button:hover {
+  background: #c2c2a3;
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	&:hover {
+		color: #666;
+	}
+	
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contents {
+  height: 300px;
+  width: 500px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+}
+</style>
+
+<body>
+    
+<a href="#" id="button" class="button">Login</a>
+
+
+    <div class="bg-modal">
+	<div class="modal-contents">
+
+
+    <div class="close">+</div>
+    <div class="center">
+<img src =
+  "https://www.industrialui.com/wp-content/uploads/2016/09/256x256.png" alt =
+  "ATTENDANCE" width = "90" height = "90" > 
+  <br>
+
+
+ <form >
+    <input type="text" name="UserName" placeholder="UserName" >		
+    <br>
+    <input type="password" name="Password" placeholder="Password">
+    <div style="text-align:center;">
+    <br>
+    
+    <input type="submit" placeholder="submit" onClick="Submit" style=border-radius:5px>
+   
+ </form>
+    
+</div>
+</div>
+</div>
+
+<script>
+    document.getElementById('button').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "flex";
+});
+
+document.querySelector('.close').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "none";
+});
+    
+    
+</script>
+
+</body>
+</html>
